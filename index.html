@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="image/cat-1.png"/>
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <!-- start header -->
+        <header class="header">
+            <!-- logo -->
+            <a href="" class="header__logo"><i class="fas fa-shopping-basket header__logo-icon"></i>groco</a>
+    
+            <!-- nav -->
+            <nav class="header__nav">
+                <a href="#home" class="header__nav-item">home</a>
+                <a href="#features" class="header__nav-item">features</a>
+                <a href="#products" class="header__nav-item">products</a>
+                <a href="#categories" class="header__nav-item">categories</a>
+                <a href="#review" class="header__nav-item">review</a>
+                <a href="#blogs" class="header__nav-item">blogs</a>
+            </nav>
+
+            <!-- control icon -->
+            <div class="header__control">
+                <div class="header__control-icon hide-on-pc header__control-menu"><i class="fas fa-bars"></i></div>
+                <div class="header__control-icon header__control-search"><i class="fas fa-search"></i></div>
+                <div class="header__control-icon header__control-cart"><i class="fas fa-shopping-cart"></i></div>
+                <div class="header__control-icon header__control-user"><i class="fas fa-user"></i></div>
+            </div>
+
+            <!-- search form -->
+            <form action="" class="header__search-form">
+                <input type="text" name="" id="header__search-box" placeholder="search here...">
+                <label for="header__search-box" class="fas fa-search header__search-icon"></label>
+            </form>
+
+            <!-- header cart -->
+            <div class="header__cart">
+                <ul class="header__cart-list">
+                    <li class="header__cart-item">
+                        <img src="image/cart-img-1.png" alt="" class="header__cart-item-img">
+                        <div class="header__cart-item-info">
+                            <div class="header__cart-item-heading">Watermelon</div>
+                            <div class="header__cart-item-sub">
+                                <div class="header__cart-item-price">$4.99</div>
+                                <div class="header__cart-item-quantity">Qty: 1</div>
+                            </div>
+                        </div>
+                        <div class="header__cart-item-remove"><i class="fas fa-trash"></i></div>
+                    </li>
+                    <li class="header__cart-item">
+                        <img src="image/cart-img-2.png" alt="" class="header__cart-item-img">
+                        <div class="header__cart-item-info">
+                            <div class="header__cart-item-heading">Onion</div>
+                            <div class="header__cart-item-sub">
+                                <div class="header__cart-item-price">$1.29</div>
+                                <div class="header__cart-item-quantity">Qty: 3</div>
+                            </div>
+                        </div>
+                        <div class="header__cart-item-remove"><i class="fas fa-trash"></i></div>
+                    </li>
+                    <li class="header__cart-item">
+                        <img src="image/cart-img-3.png" alt="" class="header__cart-item-img">
+                        <div class="header__cart-item-info">
+                            <div class="header__cart-item-heading">Chicken</div>
+                            <div class="header__cart-item-sub">
+                                <div class="header__cart-item-price">$10.55</div>
+                                <div class="header__cart-item-quantity">Qty: 2</div>
+                            </div>
+                        </div>
+                        <div class="header__cart-item-remove"><i class="fas fa-trash"></i></div>
+                    </li>
+                    <li class="header__cart-item">
+                        <img src="image/product-5.png" alt="" class="header__cart-item-img">
+                        <div class="header__cart-item-info">
+                            <div class="header__cart-item-heading">potato</div>
+                            <div class="header__cart-item-sub">
+                                <div class="header__cart-item-price">$3.12</div>
+                                <div class="header__cart-item-quantity">Qty: 5</div>
+                            </div>
+                        </div>
+                        <div class="header__cart-item-remove"><i class="fas fa-trash"></i></div>
+                    </li>
+                </ul>
+                <div class="header__cart-total">Total : $200.66</div>
+                <a class="header__cart-checkout btn">checkout</a>
+            </div>
+
+            <!-- login form -->
+            <form action="" class="header__login-form">
+                <div class="header__login-title">login now</div>
+                <div class="header__login-box">
+                    <input type="text" name="email" id="" class="header__login-input" placeholder="your email">
+                    <input type="text" name="password" id="" class="header__login-input" placeholder="your password">
+                </div>
+                <div class="header__login-content">
+                    <div class="header__login-forget-password">
+                        Forget Your Password
+                        <a href="" class="header__login-forget-link">Click Here</a>
+                    </div>
+                    <div class="header__login-signup">
+                        Don't Have An Account
+                        <a href="" class="header__login-signup-link">Create Now</a>
+                    </div>
+                </div>
+                <a class="header__login-btn btn">login now</a>
+            </form>
+        </header>
+        <!-- start header -->
+
+        <!-- start home -->
+        <div class="home" id="home">
+            <div class="home__content">
+                <h1 class="home__heading">Fresh And <span class="home__heading-span">Organic</span> Products For Your</h1>
+                <p class="home__description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Aliquam Libero Nostrum Veniam Facere Tempore Nisi.</p>
+                <a class="home-btn btn">shop now</a>
+            </div>
+        </div>
+        <!-- end home -->
+
+        <!-- start features -->
+        <section class="features" id="features">
+            <div class="heading">our <span class="heading-span">features</span></div>
+            <div class="features__block">
+                <div class="features__block-item">
+                    <img src="./image/feature-img-1.png" alt="" class="features__item-img">
+                    <h1 class="features__item-title">Fresh And Organic</h1>
+                    <p class="features__item-description">Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Deserunt, Earum!</p>
+                    <a class="btn">read more</a>
+                </div>
+                <div class="features__block-item">
+                    <img src="./image/feature-img-2.png" alt="" class="features__item-img">
+                    <h1 class="features__item-title">Free Delivery</h1>
+                    <p class="features__item-description">Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Deserunt, Earum!</p>
+                    <a class="btn">read more</a>
+                </div>
+                <div class="features__block-item">
+                    <img src="./image/feature-img-3.png" alt="" class="features__item-img">
+                    <h1 class="features__item-title">Easy Payments</h1>
+                    <p class="features__item-description">Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Deserunt, Earum!</p>
+                    <a class="btn">read more</a>
+                </div>
+            </div>
+        </section>
+        <!-- end features -->
+
+        <!-- start products -->
+        <section class="products" id="products">
+            <div class="heading">our <span class="heading-span">products</span></div>
+            <div class="swiper products__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide products__item">
+                        <img src="./image/product-1.png" alt="" class="products__item-img">
+                        <h1 class="products__item-name">fresh cabbage</h1>
+                        <div class="products__item-price">$4.99 - $10.99</div>
+                        <div class="products__item-stars">
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star-half-alt products__item-star"></i>
+                        </div>
+                        <a class="btn">add to cart</a>
+                    </div>
+                    <div class="swiper-slide products__item">
+                        <img src="./image/product-2.png" alt="" class="products__item-img">
+                        <h1 class="products__item-name">fresh orange</h1>
+                        <div class="products__item-price">$4.99 - $10.99</div>
+                        <div class="products__item-stars">
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star-half-alt products__item-star"></i>
+                        </div>
+                        <a class="btn">add to cart</a>
+                    </div>
+                    <div class="swiper-slide products__item">
+                        <img src="./image/product-3.png" alt="" class="products__item-img">
+                        <h1 class="products__item-name">fresh onion</h1>
+                        <div class="products__item-price">$4.99 - $10.99</div>
+                        <div class="products__item-stars">
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star-half-alt products__item-star"></i>
+                        </div>
+                        <a class="btn">add to cart</a>
+                    </div>
+                    <div class="swiper-slide products__item">
+                        <img src="./image/product-4.png" alt="" class="products__item-img">
+                        <h1 class="products__item-name">fresh meat</h1>
+                        <div class="products__item-price">$4.99 - $10.99</div>
+                        <div class="products__item-stars">
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star-half-alt products__item-star"></i>
+                        </div>
+                        <a class="btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper products__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide products__item">
+                        <img src="./image/product-5.png" alt="" class="products__item-img">
+                        <h1 class="products__item-name">fresh lemon</h1>
+                        <div class="products__item-price">$4.99 - $10.99</div>
+                        <div class="products__item-stars">
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star-half-alt products__item-star"></i>
+                        </div>
+                        <a class="btn">add to cart</a>
+                    </div>
+                    <div class="swiper-slide products__item">
+                        <img src="./image/product-6.png" alt="" class="products__item-img">
+                        <h1 class="products__item-name">fresh potato</h1>
+                        <div class="products__item-price">$4.99 - $10.99</div>
+                        <div class="products__item-stars">
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star-half-alt products__item-star"></i>
+                        </div>
+                        <a class="btn">add to cart</a>
+                    </div>
+                    <div class="swiper-slide products__item">
+                        <img src="./image/product-7.png" alt="" class="products__item-img">
+                        <h1 class="products__item-name">fresh avocado</h1>
+                        <div class="products__item-price">$4.99 - $10.99</div>
+                        <div class="products__item-stars">
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star-half-alt products__item-star"></i>
+                        </div>
+                        <a class="btn">add to cart</a>
+                    </div>
+                    <div class="swiper-slide products__item">
+                        <img src="./image/product-8.png" alt="" class="products__item-img">
+                        <h1 class="products__item-name">fresh carrot</h1>
+                        <div class="products__item-price">$4.99 - $10.99</div>
+                        <div class="products__item-stars">
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star products__item-star"></i>
+                            <i class="fas fa-star-half-alt products__item-star"></i>
+                        </div>
+                        <a class="btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end products -->
+
+        <!-- start categories -->
+        <section class="categories" id="categories">
+            <div class="heading">product <span class="heading-span">categories</span></div>
+            <div class="categories__block">
+                <div class="categories__item">
+                    <img src="./image/cat-1.png" alt="" class="categories__item-img">
+                    <h1 class="categories__item-name">Vegitables</h1>
+                    <div class="categories__item-sale-off">Upto 45% Off</div>
+                    <a class="btn">shop now</a>
+                </div>
+                <div class="categories__item">
+                    <img src="./image/cat-2.png" alt="" class="categories__item-img">
+                    <h1 class="categories__item-name">Fresh Fruits</h1>
+                    <div class="categories__item-sale-off">Upto 45% Off</div>
+                    <a class="btn">shop now</a>
+                </div>
+                <div class="categories__item">
+                    <img src="./image/cat-3.png" alt="" class="categories__item-img">
+                    <h1 class="categories__item-name">Dairy Products</h1>
+                    <div class="categories__item-sale-off">Upto 45% Off</div>
+                    <a class="btn">shop now</a>
+                </div>
+                <div class="categories__item">
+                    <img src="./image/cat-4.png" alt="" class="categories__item-img">
+                    <h1 class="categories__item-name">Fresh Meat</h1>
+                    <div class="categories__item-sale-off">Upto 45% Off</div>
+                    <a class="btn">shop now</a>
+                </div>
+            </div>
+        </section>
+        <!-- end categories -->
+
+        <!-- start review -->
+        <section class="review" id="review">
+            <div class="heading">Customer's<span class="heading-span">review</span></div>
+            <div class="review__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide review__item">
+                        <img src="./image/pic-1.png" alt="" class="review__item-img">
+                        <p class="review__item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                        <h1 class="review__item-name">john deo</h1>
+                        <div class="review__item-stars">
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star-half-alt review__item-star"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide review__item">
+                        <img src="./image/pic-2.png" alt="" class="review__item-img">
+                        <p class="review__item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                        <h1 class="review__item-name">john deo</h1>
+                        <div class="review__item-stars">
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star-half-alt review__item-star"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide review__item">
+                        <img src="./image/pic-3.png" alt="" class="review__item-img">
+                        <p class="review__item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                        <h1 class="review__item-name">john deo</h1>
+                        <div class="review__item-stars">
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star-half-alt review__item-star"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide review__item">
+                        <img src="./image/pic-4.png" alt="" class="review__item-img">
+                        <p class="review__item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde sunt fugiat dolore ipsum id est maxime ad tempore quasi tenetur.</p>
+                        <h1 class="review__item-name">john deo</h1>
+                        <div class="review__item-stars">
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star review__item-star"></i>
+                            <i class="fas fa-star-half-alt review__item-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end review -->
+        
+        <section class="blogs" id="blogs">
+            <div class="heading">our<span class="heading-span">blogs</span></div>
+            <div class="blogs__block">
+                <div class="blogs__item">
+                    <img src="./image/blog-1.jpg" alt="" class="blogs__item-img">
+                    <div class="blogs__item-content">
+                        <div class="blogs__item-author">
+                            <a href="" class="blogs__item-user"><i class="fas fa-user blogs__item-user-icon"></i>by user</a>
+                            <a href="" class="blogs__item-calendar"><i class="fas fa-calendar blogs__item-calendar-icon"></i> 1st May, 2021</a>
+                        </div>
+                        <h1 class="blogs__item-name">Fresh And Organic Vegitables And Fruits</h1>
+                        <p class="blogs__item-description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                        <a class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="blogs__item">
+                    <img src="./image/blog-2.jpg" alt="" class="blogs__item-img">
+                    <div class="blogs__item-content">
+                        <div class="blogs__item-author">
+                            <a href="" class="blogs__item-user"><i class="fas fa-user blogs__item-user-icon"></i>by user</a>
+                            <a href="" class="blogs__item-calendar"><i class="fas fa-calendar blogs__item-calendar-icon"></i> 1st May, 2021</a>
+                        </div>
+                        <h1 class="blogs__item-name">Fresh And Organic Vegitables And Fruits</h1>
+                        <p class="blogs__item-description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                        <a class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="blogs__item">
+                    <img src="./image/blog-3.jpg" alt="" class="blogs__item-img">
+                    <div class="blogs__item-content">
+                        <div class="blogs__item-author">
+                            <a href="" class="blogs__item-user"><i class="fas fa-user blogs__item-user-icon"></i>by user</a>
+                            <a href="" class="blogs__item-calendar"><i class="fas fa-calendar blogs__item-calendar-icon"></i> 1st May, 2021</a>
+                        </div>
+                        <h1 class="blogs__item-name">Fresh And Organic Vegitables And Fruits</h1>
+                        <p class="blogs__item-description">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Expedita.</p>
+                        <a class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start footer -->
+        <section class="footer">
+            <div class="footer__block">
+                <div class="footer__item">
+                    <a href="" class="footer__item-heading">groco<i class="fas fa-shopping-basket footer__item-logo-icon"></i></a>
+                    <p class="footer__item-about">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Aliquam, Saepe.</p>
+                    <div class="footer__item-share">
+                        <a href="#" class="fab fa-facebook-f footer__item-share-icon"></a>
+                        <a href="#" class="fab fa-twitter footer__item-share-icon"></a>
+                        <a href="#" class="fab fa-instagram footer__item-share-icon"></a>
+                        <a href="#" class="fab fa-linkedin footer__item-share-icon"></a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <a href="" class="footer__item-heading">Contact Info</a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-phone footer__item-icon"></i> +123-456-7890 </a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-phone footer__item-icon"></i> +111-222-3333 </a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-envelope footer__item-icon"></i> shaikhanas@gmail.com </a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-map-marker-alt footer__item-icon"></i> mumbai, india - 400104 </a>
+                </div>
+                <div class="footer__item">
+                    <a href="" class="footer__item-heading">Quick Links</a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-arrow-right footer__item-icon"></i> home </a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-arrow-right footer__item-icon"></i> features </a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-arrow-right footer__item-icon"></i> products </a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-arrow-right footer__item-icon"></i> categories </a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-arrow-right footer__item-icon"></i> review </a>
+                    <a href="#" class="footer__item-link"> <i class="fas fa-arrow-right footer__item-icon"></i> blogs </a>
+                </div>
+                <div class="footer__item">
+                    <a href="" class="footer__item-heading">Newsletter</a>
+                    <p class="footer__item-subscribe">Subscribe For Latest Updates</p>
+                    <input type="text" name="email" id="" class="header__login-input" placeholder="your email">
+                    <a class="btn">read more</a>
+                    <img src="./image/payment.png" alt="" class="footer__item-img">
+                </div>
+            </div>
+            <div class="footer__create">create by <span class="footer__create-by">minaT</span> | All Rights Reserved</div>
+        </section>
+        <!-- end footer -->
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
